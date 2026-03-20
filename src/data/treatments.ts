@@ -293,7 +293,7 @@ export const treatments: Treatment[] = [
     benefits: ["Naturalidade e definição", "Fios ultrafinos realistas", "Sombreamento suave", "Harmoniza o olhar", "Longa duração"],
     duration: "1h30 a 2h30",
     price: "180€",
-    image: "treatment-design",
+    image: "treatment-sobrancelhas-hibridas",
   },
   {
     id: "lash-brow-lamination",
