@@ -317,7 +317,7 @@ export const treatments: Treatment[] = [
     benefits: ["Realça o olhar", "Dispensa maquilhagem", "Fios leves e confortáveis", "Três estilos disponíveis", "Duração 4-6 semanas"],
     duration: "1h30 a 2h30",
     price: "35€",
-    image: "treatment-design",
+    image: "treatment-extensao-pestanas",
   },
   {
     id: "design-sobrancelhas",
