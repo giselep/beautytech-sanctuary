@@ -232,7 +232,7 @@ export const treatments: Treatment[] = [
     benefits: ["Efeito lifting imediato", "Estimula colagénio natural", "Melhora firmeza e textura", "Não cirúrgico", "Resultados progressivos", "Totalmente absorvível"],
     duration: "50 min",
     price: "60€",
-    image: "treatment-facial",
+    image: "treatment-fios-seda",
   },
   {
     id: "booster-dermapen",
