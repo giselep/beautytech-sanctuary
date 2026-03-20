@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-spa.jpg";
+import heroImage from "@/assets/hero-spa.webp";
 
 const HeroSection = () => {
   return (

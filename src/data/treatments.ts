@@ -93,7 +93,7 @@ export const treatments: Treatment[] = [
     benefits: ["Reduz gordura localizada", "Modela o corpo", "Tonifica a pele", "Combate celulite e flacidez", "Resultados desde primeiras sessões"],
     duration: "40 min",
     price: "40€",
-    image: "treatment-body",
+    image: "treatment-just4you",
   },
   {
     id: "eletroestimulacao",
@@ -105,7 +105,7 @@ export const treatments: Treatment[] = [
     benefits: ["Tonifica e define o corpo", "Exercício passivo", "Ativa circulação e metabolismo", "Complemento para ginásio", "Fortalece músculos profundos"],
     duration: "40 min",
     price: "25€",
-    image: "treatment-body",
+    image: "treatment-eletroestimulacao",
   },
   {
     id: "pump-up",
@@ -117,7 +117,7 @@ export const treatments: Treatment[] = [
     benefits: ["Efeito lifting nos glúteos", "Melhora circulação", "Estimula colagénio", "Aumenta volume muscular", "Melhora textura da pele"],
     duration: "30 min",
     price: "40€",
-    image: "treatment-body",
+    image: "treatment-pump-up",
   },
   // REDUTORA
   {
@@ -166,7 +166,7 @@ export const treatments: Treatment[] = [
     benefits: ["Sem agulhas, sem dor", "Reduz gordura localizada", "Trata celulite", "Melhora firmeza da pele", "Redefine contorno corporal", "Resultados desde primeiras sessões"],
     duration: "50 min",
     price: "150€",
-    image: "treatment-body",
+    image: "treatment-pump-up",
   },
   // DEPILAÇÃO
   {
@@ -201,7 +201,7 @@ export const treatments: Treatment[] = [
     benefits: ["Efeito lifting imediato", "Melhora firmeza e textura", "Redução de rugas", "Definição do contorno facial", "Estímulo profundo de colágeno", "Resultado visível na 1ª sessão"],
     duration: "60 min",
     price: "A partir de 70€",
-    image: "treatment-hifu",
+    image: "treatment-hifu-facial",
     subTreatments: [
       { name: "Rosto Completo", price: "200€" },
       { name: "Rosto + Papada", price: "250€" },
@@ -220,7 +220,7 @@ export const treatments: Treatment[] = [
     benefits: ["Limpeza profunda", "Rejuvenescimento completo", "Hidratação intensa", "Firmeza e colagénio", "Poros fechados", "Luminosidade natural"],
     duration: "60 min",
     price: "60€",
-    image: "treatment-facial",
+    image: "treatment-pure-facial",
   },
   {
     id: "fios-seda",
@@ -232,7 +232,7 @@ export const treatments: Treatment[] = [
     benefits: ["Efeito lifting imediato", "Estimula colagénio natural", "Melhora firmeza e textura", "Não cirúrgico", "Resultados progressivos", "Totalmente absorvível"],
     duration: "50 min",
     price: "60€",
-    image: "treatment-facial",
+    image: "treatment-fios-seda",
   },
   {
     id: "booster-dermapen",
@@ -244,7 +244,7 @@ export const treatments: Treatment[] = [
     benefits: ["Renovação celular", "Absorção profunda de ativos", "Suaviza rugas finas", "Uniformiza tom de pele", "Resultados imediatos e progressivos"],
     duration: "50 min",
     price: "A partir de 70€",
-    image: "treatment-facial",
+    image: "treatment-booster-dermapen",
   },
   {
     id: "intradermoterapia",
@@ -256,7 +256,7 @@ export const treatments: Treatment[] = [
     benefits: ["Sem agulhas, sem dor", "Resultados imediatos", "Estímulo de colagénio", "Hidratação profunda", "Sem tempo de recuperação"],
     duration: "50 min",
     price: "A partir de 70€",
-    image: "treatment-facial",
+    image: "treatment-intradermoterapia",
   },
   // FACE DESIGN
   {
@@ -269,7 +269,7 @@ export const treatments: Treatment[] = [
     benefits: ["Volume natural", "Sem agulhas", "Hidratação profunda", "Efeito glow", "Definição labial", "Confortável e seguro"],
     duration: "1h30 a 2h30",
     price: "180€",
-    image: "treatment-design",
+    image: "treatment-preenchimento-labial",
   },
   {
     id: "micropigmentacao-labial",
@@ -281,7 +281,7 @@ export const treatments: Treatment[] = [
     benefits: ["Cor natural duradoura", "Corrige assimetrias", "Contorno definido", "Efeito batom natural", "Personalização de tonalidade"],
     duration: "1h30 a 2h30",
     price: "180€",
-    image: "treatment-design",
+    image: "treatment-micropigmentacao-labial",
   },
   {
     id: "sobrancelhas-hibridas",
@@ -293,7 +293,7 @@ export const treatments: Treatment[] = [
     benefits: ["Naturalidade e definição", "Fios ultrafinos realistas", "Sombreamento suave", "Harmoniza o olhar", "Longa duração"],
     duration: "1h30 a 2h30",
     price: "180€",
-    image: "treatment-design",
+    image: "treatment-sobrancelhas-hibridas",
   },
   {
     id: "lash-brow-lamination",
@@ -305,7 +305,7 @@ export const treatments: Treatment[] = [
     benefits: ["Efeito lifting natural", "Volume e brilho", "Corrige assimetrias", "Nutrição com queratina", "Resultado instantâneo"],
     duration: "1h30",
     price: "60€",
-    image: "treatment-design",
+    image: "treatment-lash-lamination",
   },
   {
     id: "extensao-pestanas",
@@ -317,7 +317,7 @@ export const treatments: Treatment[] = [
     benefits: ["Realça o olhar", "Dispensa maquilhagem", "Fios leves e confortáveis", "Três estilos disponíveis", "Duração 4-6 semanas"],
     duration: "1h30 a 2h30",
     price: "35€",
-    image: "treatment-design",
+    image: "treatment-extensao-pestanas",
   },
   {
     id: "design-sobrancelhas",
@@ -329,7 +329,7 @@ export const treatments: Treatment[] = [
     benefits: ["Corrige assimetrias", "Realça expressão facial", "Efeito imediato", "Sem dor", "Duração 7-14 dias"],
     duration: "40 min",
     price: "25€",
-    image: "treatment-design",
+    image: "treatment-design-sobrancelhas",
   },
   // MASSAGENS & COMBOS
   {
@@ -343,7 +343,7 @@ export const treatments: Treatment[] = [
     duration: "15 min cada",
     price: "50€/mês",
     priceNote: "Antes 60€",
-    image: "treatment-massage",
+    image: "treatment-liberacao-muscular",
   },
   {
     id: "empina-bumbum",
@@ -356,7 +356,7 @@ export const treatments: Treatment[] = [
     duration: "1 mês (2x/semana)",
     price: "150€",
     priceNote: "Antes 215€",
-    image: "treatment-body",
+    image: "treatment-empina-bumbum",
   },
   {
     id: "perda-medidas",
@@ -369,7 +369,7 @@ export const treatments: Treatment[] = [
     duration: "1 mês (2x/semana)",
     price: "150€",
     priceNote: "Antes 220€",
-    image: "treatment-body",
+    image: "treatment-perda-medidas",
   },
   // CAPILAR
   {
@@ -395,7 +395,7 @@ export const treatments: Treatment[] = [
     benefits: ["Suaviza rugas", "Hidrata profundamente", "Estimula colagénio", "Resultados na 1ª sessão", "Sem dor, sem agulhas"],
     duration: "1h30 a 2h30",
     price: "A partir de 120€",
-    image: "treatment-facial",
+    image: "treatment-preenchimento-rugas",
   },
 ];
 
