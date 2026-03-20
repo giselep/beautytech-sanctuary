@@ -44,7 +44,7 @@ export const treatments: Treatment[] = [
     benefits: ["Elimina líquidos retidos", "Reduz inchaço e peso", "Ideal pós-treino e pós-cirurgia", "Promove equilíbrio do organismo", "Ativa vasos linfáticos"],
     duration: "40 min",
     price: "40€",
-    image: "treatment-drenagem",
+    image: "treatment-drenagem-linfatica",
   },
   {
     id: "pressoterapia",
@@ -56,7 +56,7 @@ export const treatments: Treatment[] = [
     benefits: ["Drenagem linfática eficaz", "Ativa circulação sanguínea", "Combate a celulite", "Sensação imediata de leveza", "Acelera recuperação muscular", "Complementa tratamentos redutores"],
     duration: "30 min",
     price: "20€",
-    image: "treatment-drenagem",
+    image: "treatment-pressoterapia",
   },
   {
     id: "manta-termica",
@@ -68,7 +68,7 @@ export const treatments: Treatment[] = [
     benefits: ["Eliminação de toxinas e líquidos", "Redução de medidas", "Estímulo da circulação", "Potencia tratamentos redutores", "Relaxamento muscular"],
     duration: "30 min",
     price: "20€",
-    image: "treatment-drenagem",
+    image: "treatment-manta-termica",
   },
   {
     id: "detox-pes",
@@ -80,7 +80,7 @@ export const treatments: Treatment[] = [
     benefits: ["Eliminação de toxinas", "Drenagem linfática natural", "Ionização purificadora", "Estimula sistema linfático", "Processo visual de purificação"],
     duration: "30 min",
     price: "30€",
-    image: "treatment-drenagem",
+    image: "treatment-detox-pes",
   },
   // MODELADORA
   {
