@@ -305,7 +305,7 @@ export const treatments: Treatment[] = [
     benefits: ["Efeito lifting natural", "Volume e brilho", "Corrige assimetrias", "Nutrição com queratina", "Resultado instantâneo"],
     duration: "1h30",
     price: "60€",
-    image: "treatment-design",
+    image: "treatment-lash-lamination",
   },
   {
     id: "extensao-pestanas",
