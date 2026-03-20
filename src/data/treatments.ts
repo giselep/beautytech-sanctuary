@@ -281,7 +281,7 @@ export const treatments: Treatment[] = [
     benefits: ["Cor natural duradoura", "Corrige assimetrias", "Contorno definido", "Efeito batom natural", "Personalização de tonalidade"],
     duration: "1h30 a 2h30",
     price: "180€",
-    image: "treatment-design",
+    image: "treatment-micropigmentacao-labial",
   },
   {
     id: "sobrancelhas-hibridas",
