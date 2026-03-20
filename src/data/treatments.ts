@@ -117,7 +117,7 @@ export const treatments: Treatment[] = [
     benefits: ["Efeito lifting nos glúteos", "Melhora circulação", "Estimula colagénio", "Aumenta volume muscular", "Melhora textura da pele"],
     duration: "30 min",
     price: "40€",
-    image: "treatment-body",
+    image: "treatment-pump-up",
   },
   // REDUTORA
   {
