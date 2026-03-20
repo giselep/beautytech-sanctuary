@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { categories, getTreatmentsByCategory } from "@/data/treatments";
 import { getImage } from "@/components/CategoryCard";
 
+// CategoryPage component
 const CategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const category = categories.find((c) => c.slug === slug);
