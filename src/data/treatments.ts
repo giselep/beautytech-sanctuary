@@ -44,7 +44,7 @@ export const treatments: Treatment[] = [
     benefits: ["Elimina líquidos retidos", "Reduz inchaço e peso", "Ideal pós-treino e pós-cirurgia", "Promove equilíbrio do organismo", "Ativa vasos linfáticos"],
     duration: "40 min",
     price: "40€",
-    image: "treatment-drenagem",
+    image: "treatment-drenagem-linfatica",
   },
   {
     id: "pressoterapia",
