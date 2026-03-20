@@ -4,18 +4,36 @@ import { ArrowRight } from "lucide-react";
 import type { TreatmentCategory } from "@/data/treatments";
 
 // Image imports map
-import imgDrenagem from "@/assets/treatment-drenagem.jpg";
-import imgBody from "@/assets/treatment-body.jpg";
-import imgHifu from "@/assets/treatment-hifu.jpg";
-import imgLaser from "@/assets/treatment-laser.jpg";
-import imgFacial from "@/assets/treatment-facial.jpg";
-import imgDesign from "@/assets/treatment-design.jpg";
-import imgMassage from "@/assets/treatment-massage.jpg";
-import imgHair from "@/assets/treatment-hair.jpg";
-import imgDrenagemLinfatica from "@/assets/treatment-drenagem-linfatica.jpg";
-import imgPressoterapia from "@/assets/treatment-pressoterapia.jpg";
-import imgMantaTermica from "@/assets/treatment-manta-termica.jpg";
-import imgDetoxPes from "@/assets/treatment-detox-pes.jpg";
+import imgDrenagem from "@/assets/treatment-drenagem.webp";
+import imgBody from "@/assets/treatment-body.webp";
+import imgHifu from "@/assets/treatment-hifu.webp";
+import imgLaser from "@/assets/treatment-laser.webp";
+import imgFacial from "@/assets/treatment-facial.webp";
+import imgDesign from "@/assets/treatment-design.webp";
+import imgMassage from "@/assets/treatment-massage.webp";
+import imgHair from "@/assets/treatment-hair.webp";
+import imgDrenagemLinfatica from "@/assets/treatment-drenagem-linfatica.webp";
+import imgPressoterapia from "@/assets/treatment-pressoterapia.webp";
+import imgMantaTermica from "@/assets/treatment-manta-termica.webp";
+import imgDetoxPes from "@/assets/treatment-detox-pes.webp";
+import imgJust4you from "@/assets/treatment-just4you.webp";
+import imgEletroestimulacao from "@/assets/treatment-eletroestimulacao.webp";
+import imgPumpUp from "@/assets/treatment-pump-up.webp";
+import imgPreenchimentoLabial from "@/assets/treatment-preenchimento-labial.webp";
+import imgMicropigmentacaoLabial from "@/assets/treatment-micropigmentacao-labial.webp";
+import imgSobrancelhasHibridas from "@/assets/treatment-sobrancelhas-hibridas.webp";
+import imgLashLamination from "@/assets/treatment-lash-lamination.webp";
+import imgExtensaoPestanas from "@/assets/treatment-extensao-pestanas.webp";
+import imgDesignSobrancelhas from "@/assets/treatment-design-sobrancelhas.webp";
+import imgHifuFacial from "@/assets/treatment-hifu-facial.webp";
+import imgPureFacial from "@/assets/treatment-pure-facial.webp";
+import imgFiosSeda from "@/assets/treatment-fios-seda.webp";
+import imgBoosterDermapen from "@/assets/treatment-booster-dermapen.webp";
+import imgIntradermoterapia from "@/assets/treatment-intradermoterapia.webp";
+import imgPreenchimentoRugas from "@/assets/treatment-preenchimento-rugas.webp";
+import imgLiberacaoMuscular from "@/assets/treatment-liberacao-muscular.webp";
+import imgEmpinaBumbum from "@/assets/treatment-empina-bumbum.webp";
+import imgPerdaMedidas from "@/assets/treatment-perda-medidas.webp";
 
 const imageMap: Record<string, string> = {
   "treatment-drenagem": imgDrenagem,
@@ -30,6 +48,24 @@ const imageMap: Record<string, string> = {
   "treatment-pressoterapia": imgPressoterapia,
   "treatment-manta-termica": imgMantaTermica,
   "treatment-detox-pes": imgDetoxPes,
+  "treatment-just4you": imgJust4you,
+  "treatment-eletroestimulacao": imgEletroestimulacao,
+  "treatment-pump-up": imgPumpUp,
+  "treatment-preenchimento-labial": imgPreenchimentoLabial,
+  "treatment-micropigmentacao-labial": imgMicropigmentacaoLabial,
+  "treatment-sobrancelhas-hibridas": imgSobrancelhasHibridas,
+  "treatment-lash-lamination": imgLashLamination,
+  "treatment-extensao-pestanas": imgExtensaoPestanas,
+  "treatment-design-sobrancelhas": imgDesignSobrancelhas,
+  "treatment-hifu-facial": imgHifuFacial,
+  "treatment-pure-facial": imgPureFacial,
+  "treatment-fios-seda": imgFiosSeda,
+  "treatment-booster-dermapen": imgBoosterDermapen,
+  "treatment-intradermoterapia": imgIntradermoterapia,
+  "treatment-preenchimento-rugas": imgPreenchimentoRugas,
+  "treatment-liberacao-muscular": imgLiberacaoMuscular,
+  "treatment-empina-bumbum": imgEmpinaBumbum,
+  "treatment-perda-medidas": imgPerdaMedidas,
 };
 
 export const getImage = (key: string) => imageMap[key] || imgFacial;
