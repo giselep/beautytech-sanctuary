@@ -256,7 +256,7 @@ export const treatments: Treatment[] = [
     benefits: ["Sem agulhas, sem dor", "Resultados imediatos", "Estímulo de colagénio", "Hidratação profunda", "Sem tempo de recuperação"],
     duration: "50 min",
     price: "A partir de 70€",
-    image: "treatment-facial",
+    image: "treatment-intradermoterapia",
   },
   // FACE DESIGN
   {
