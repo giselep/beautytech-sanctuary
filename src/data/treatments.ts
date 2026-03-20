@@ -269,7 +269,7 @@ export const treatments: Treatment[] = [
     benefits: ["Volume natural", "Sem agulhas", "Hidratação profunda", "Efeito glow", "Definição labial", "Confortável e seguro"],
     duration: "1h30 a 2h30",
     price: "180€",
-    image: "treatment-design",
+    image: "treatment-preenchimento-labial",
   },
   {
     id: "micropigmentacao-labial",
