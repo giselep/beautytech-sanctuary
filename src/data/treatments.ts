@@ -220,7 +220,7 @@ export const treatments: Treatment[] = [
     benefits: ["Limpeza profunda", "Rejuvenescimento completo", "Hidratação intensa", "Firmeza e colagénio", "Poros fechados", "Luminosidade natural"],
     duration: "60 min",
     price: "60€",
-    image: "treatment-facial",
+    image: "treatment-pure-facial",
   },
   {
     id: "fios-seda",
