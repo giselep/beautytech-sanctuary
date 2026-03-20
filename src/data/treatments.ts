@@ -201,7 +201,7 @@ export const treatments: Treatment[] = [
     benefits: ["Efeito lifting imediato", "Melhora firmeza e textura", "Redução de rugas", "Definição do contorno facial", "Estímulo profundo de colágeno", "Resultado visível na 1ª sessão"],
     duration: "60 min",
     price: "A partir de 70€",
-    image: "treatment-hifu",
+    image: "treatment-hifu-facial",
     subTreatments: [
       { name: "Rosto Completo", price: "200€" },
       { name: "Rosto + Papada", price: "250€" },
