@@ -105,7 +105,7 @@ export const treatments: Treatment[] = [
     benefits: ["Tonifica e define o corpo", "Exercício passivo", "Ativa circulação e metabolismo", "Complemento para ginásio", "Fortalece músculos profundos"],
     duration: "40 min",
     price: "25€",
-    image: "treatment-body",
+    image: "treatment-eletroestimulacao",
   },
   {
     id: "pump-up",
