@@ -12,6 +12,10 @@ import imgFacial from "@/assets/treatment-facial.jpg";
 import imgDesign from "@/assets/treatment-design.jpg";
 import imgMassage from "@/assets/treatment-massage.jpg";
 import imgHair from "@/assets/treatment-hair.jpg";
+import imgDrenagemLinfatica from "@/assets/treatment-drenagem-linfatica.jpg";
+import imgPressoterapia from "@/assets/treatment-pressoterapia.jpg";
+import imgMantaTermica from "@/assets/treatment-manta-termica.jpg";
+import imgDetoxPes from "@/assets/treatment-detox-pes.jpg";
 
 const imageMap: Record<string, string> = {
   "treatment-drenagem": imgDrenagem,
@@ -22,6 +26,10 @@ const imageMap: Record<string, string> = {
   "treatment-design": imgDesign,
   "treatment-massage": imgMassage,
   "treatment-hair": imgHair,
+  "treatment-drenagem-linfatica": imgDrenagemLinfatica,
+  "treatment-pressoterapia": imgPressoterapia,
+  "treatment-manta-termica": imgMantaTermica,
+  "treatment-detox-pes": imgDetoxPes,
 };
 
 export const getImage = (key: string) => imageMap[key] || imgFacial;

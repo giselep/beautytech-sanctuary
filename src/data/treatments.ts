@@ -80,7 +80,7 @@ export const treatments: Treatment[] = [
     benefits: ["Eliminação de toxinas", "Drenagem linfática natural", "Ionização purificadora", "Estimula sistema linfático", "Processo visual de purificação"],
     duration: "30 min",
     price: "30€",
-    image: "treatment-drenagem",
+    image: "treatment-detox-pes",
   },
   // MODELADORA
   {
