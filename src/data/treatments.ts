@@ -356,7 +356,7 @@ export const treatments: Treatment[] = [
     duration: "1 mês (2x/semana)",
     price: "150€",
     priceNote: "Antes 215€",
-    image: "treatment-body",
+    image: "treatment-empina-bumbum",
   },
   {
     id: "perda-medidas",
