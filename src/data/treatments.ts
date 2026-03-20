@@ -166,7 +166,7 @@ export const treatments: Treatment[] = [
     benefits: ["Sem agulhas, sem dor", "Reduz gordura localizada", "Trata celulite", "Melhora firmeza da pele", "Redefine contorno corporal", "Resultados desde primeiras sessões"],
     duration: "50 min",
     price: "150€",
-    image: "treatment-body",
+    image: "treatment-pump-up",
   },
   // DEPILAÇÃO
   {
