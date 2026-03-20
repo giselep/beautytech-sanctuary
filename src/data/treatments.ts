@@ -369,7 +369,7 @@ export const treatments: Treatment[] = [
     duration: "1 mês (2x/semana)",
     price: "150€",
     priceNote: "Antes 220€",
-    image: "treatment-body",
+    image: "treatment-perda-medidas",
   },
   // CAPILAR
   {
