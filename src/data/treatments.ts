@@ -343,7 +343,7 @@ export const treatments: Treatment[] = [
     duration: "15 min cada",
     price: "50€/mês",
     priceNote: "Antes 60€",
-    image: "treatment-massage",
+    image: "treatment-liberacao-muscular",
   },
   {
     id: "empina-bumbum",
