@@ -56,7 +56,7 @@ export const treatments: Treatment[] = [
     benefits: ["Drenagem linfática eficaz", "Ativa circulação sanguínea", "Combate a celulite", "Sensação imediata de leveza", "Acelera recuperação muscular", "Complementa tratamentos redutores"],
     duration: "30 min",
     price: "20€",
-    image: "treatment-drenagem",
+    image: "treatment-pressoterapia",
   },
   {
     id: "manta-termica",
