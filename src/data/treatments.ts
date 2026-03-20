@@ -93,7 +93,7 @@ export const treatments: Treatment[] = [
     benefits: ["Reduz gordura localizada", "Modela o corpo", "Tonifica a pele", "Combate celulite e flacidez", "Resultados desde primeiras sessões"],
     duration: "40 min",
     price: "40€",
-    image: "treatment-body",
+    image: "treatment-just4you",
   },
   {
     id: "eletroestimulacao",
