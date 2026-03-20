@@ -395,7 +395,7 @@ export const treatments: Treatment[] = [
     benefits: ["Suaviza rugas", "Hidrata profundamente", "Estimula colagénio", "Resultados na 1ª sessão", "Sem dor, sem agulhas"],
     duration: "1h30 a 2h30",
     price: "A partir de 120€",
-    image: "treatment-facial",
+    image: "treatment-preenchimento-rugas",
   },
 ];
 
