@@ -244,7 +244,7 @@ export const treatments: Treatment[] = [
     benefits: ["Renovação celular", "Absorção profunda de ativos", "Suaviza rugas finas", "Uniformiza tom de pele", "Resultados imediatos e progressivos"],
     duration: "50 min",
     price: "A partir de 70€",
-    image: "treatment-facial",
+    image: "treatment-booster-dermapen",
   },
   {
     id: "intradermoterapia",
