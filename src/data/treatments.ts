@@ -329,7 +329,7 @@ export const treatments: Treatment[] = [
     benefits: ["Corrige assimetrias", "Realça expressão facial", "Efeito imediato", "Sem dor", "Duração 7-14 dias"],
     duration: "40 min",
     price: "25€",
-    image: "treatment-design",
+    image: "treatment-design-sobrancelhas",
   },
   // MASSAGENS & COMBOS
   {
