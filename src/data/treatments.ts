@@ -68,7 +68,7 @@ export const treatments: Treatment[] = [
     benefits: ["Eliminação de toxinas e líquidos", "Redução de medidas", "Estímulo da circulação", "Potencia tratamentos redutores", "Relaxamento muscular"],
     duration: "30 min",
     price: "20€",
-    image: "treatment-drenagem",
+    image: "treatment-manta-termica",
   },
   {
     id: "detox-pes",
