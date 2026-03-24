@@ -7,6 +7,7 @@ import { categories } from "@/data/treatments";
 
 const navLinks = [
   { label: "Início", href: "/" },
+  { label: "Agendar", href: "/agendar" },
   { label: "Sobre", href: "/#sobre" },
   { label: "Contacto", href: "/#contacto" },
 ];
