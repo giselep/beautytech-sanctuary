@@ -162,16 +162,17 @@ export const treatments: Treatment[] = [
     category: "Redutora & Flacidez",
     categorySlug: "redutora",
     shortDescription: "Mesoterapia corporal com Hyaluron Pen e Ampolas Concentradas — sem agulhas, sem dor.",
-    fullDescription: "O Body Shape Pen é um tratamento de mesoterapia corporal sem agulhas, que utiliza a tecnologia Hyaluron Pen para aplicar ampolas concentradas redutoras, drenantes e reafirmantes diretamente nas camadas da pele. Graças ao sistema de pressão controlada, os ativos penetram em profundidade, promovendo resultados rápidos, seguros e confortáveis — sem dor, sem hematomas e sem tempo de recuperação. É o protocolo ideal para reduzir gordura localizada, tratar a celulite, melhorar a firmeza da pele e redefinir o contorno corporal. A Hyaluron Pen emite um jato de ar de alta pressão que dispersa microgotas da ampola (com ativos lipolíticos, drenantes ou reafirmantes) na derme, permitindo absorção uniforme e profunda, estimulando o metabolismo celular, a microcirculação e a eliminação de toxinas. O resultado é uma pele mais lisa, firme e tonificada, com melhoria visível desde as primeiras sessões.",
+    fullDescription: "O Body Shape Pen é um tratamento de mesoterapia corporal sem agulhas, que utiliza a tecnologia Hyaluron Pen para aplicar ampolas concentradas redutoras, drenantes e reafirmantes diretamente nas camadas da pele. Graças ao sistema de pressão controlada, os ativos penetram em profundidade, promovendo resultados rápidos, seguros e confortáveis — sem dor, sem hematomas e sem tempo de recuperação. É o protocolo ideal para reduzir gordura localizada, tratar a celulite, melhorar a firmeza da pele e redefinir o contorno corporal. A Hyaluron Pen emite um jato de ar de alta pressão que dispersa microgotas da ampola (com ativos lipolíticos, drenantes ou reafirmantes) na derme, permitindo absorção uniforme e profunda, estimulando o metabolismo celular, a microcirculação e a eliminação de toxinas. O resultado é uma pele mais lisa, firme e tonificada, com melhoria visível desde as primeiras sessões. Ampolas utilizadas: Lipo Redutora (Cafeína, Carnitina, Centella Asiática, Fucus, Ginkgo Biloba) — modela, redefine e afina a silhueta. Anticelulite (Cafeína, Hera, Escina, Castanha-da-Índia, Algas Marinhas) — suaviza a pele e combate a celulite de forma visível. Drenante Detox (Alcachofra, Chá Verde, Ginkgo Biloba, Castanha-da-Índia) — ideal para pós-treino e sensação de leveza corporal. Reafirmante (Silício Orgânico, DMAE, Colagénio Hidrolisado) — firmeza, elasticidade e definição corporal.",
     benefits: [
       "Sem agulhas, sem dor e sem hematomas",
       "Reduz gordura localizada com ampola Lipo Redutora",
       "Combate celulite com ampola Anticelulite",
-      "Melhora firmeza e tonificação da pele",
+      "Elimina retenção de líquidos com ampola Drenante Detox",
+      "Estimula colagénio e elastina com ampola Reafirmante",
       "Redefine o contorno corporal",
       "Resultados visíveis desde as primeiras sessões",
       "Sem tempo de recuperação",
-      "Absorção profunda e uniforme dos ativos"
+      "Ideal para gordura localizada, celulite, flacidez e pós-treino"
     ],
     duration: "50 min",
     price: "150€",
