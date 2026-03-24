@@ -72,7 +72,18 @@ const TreatmentPage = () => {
     .filter((t) => t.id !== treatment.id)
     .slice(0, 3);
 
-  const canPay = hasSubPrices ? !!selectedSub : hasSinglePrice;
+  // Parse price to number (e.g. "150€" -> 150, "A partir de 20€" -> 20)
+  const parsePrice = (priceStr: string): number => {
+    const match = priceStr.replace(/\s/g, "").match(/(\d+)/);
+    return match ? parseInt(match[1], 10) : 0;
+  };
+
+  const currentPrice = hasSubPrices && selectedSub
+    ? parsePrice(treatment.subTreatments?.find(s => s.name === selectedSub)?.price || "0")
+    : parsePrice(treatment.price);
+
+  const meetsMinimum = currentPrice >= 60;
+  const canPay = (hasSubPrices ? !!selectedSub : hasSinglePrice) && meetsMinimum;
 
   return (
     <div className="min-h-screen">
