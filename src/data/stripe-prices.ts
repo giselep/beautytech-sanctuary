@@ -1,0 +1,32 @@
+/**
+ * Maps treatment IDs to Stripe price IDs
+ */
+export const treatmentPriceMap: Record<string, string> = {
+  "drenagem-linfatica": "price_1TEZVnEF7gDchvKDuqcXcg3u",
+  "pressoterapia": "price_1TEZWAEF7gDchvKD80ERgtR7",
+  "manta-termica": "price_1TEZWiEF7gDchvKD9leqLQki",
+  "detox-pes": "price_1TEZWrEF7gDchvKDUQMjq0lr",
+  "just4you-corporal": "price_1TEZWxEF7gDchvKD5yBdsoaJ",
+  "eletroestimulacao": "price_1TEZWyEF7gDchvKDQyiBB9qv",
+  "pump-up": "price_1TEZWzEF7gDchvKD5PUWAXFA",
+  "hifu-corporal": "price_1TEZXUef7gDchvKDbv10cKWG",
+  "massagem-redutora": "price_1TEZX1EF7gDchvKD6Ue5CXWz",
+  "body-shape-pen": "price_1TEZX2EF7gDchvKDTkM4dee6",
+  "depilacao-laser": "price_1TEZXZEF7gDchvKD4bEnXhO6",
+  "hifu-facial": "price_1TEZXWEF7gDchvKDO4KSUB2q",
+  "pure-facial": "price_1TEZX6EF7gDchvKDwpO20LCC",
+  "fios-seda": "price_1TEZX7EF7gDchvKDRE2zyLLu",
+  "booster-dermapen": "price_1TEZXXEF7gDchvKDi4uoAFN4",
+  "intradermoterapia": "price_1TEZXYEF7gDchvKDq97f7sEH",
+  "preenchimento-labial": "price_1TEZX8EF7gDchvKDhbVW2gkR",
+  "micropigmentacao-labial": "price_1TEZXAEF7gDchvKDPgtQa47g",
+  "sobrancelhas-hibridas": "price_1TEZXBEF7gDchvKDCf80k8dX",
+  "lash-brow-lamination": "price_1TEZXFEF7gDchvKD6qgblp9f",
+  "extensao-pestanas": "price_1TEZXGEF7gDchvKD4UTCi1fy",
+  "design-sobrancelhas": "price_1TEZXHEF7gDchvKDoBM4LpY8",
+  "liberacao-muscular": "price_1TEZXJEF7gDchvKDi4vOFRHZ",
+  "empina-bumbum": "price_1TEZXKEF7gDchvKDklB3ifgN",
+  "perda-medidas": "price_1TEZXOEF7gDchvKDhA4eA8G8",
+  "crescimento-capilar": "price_1TEZXfEF7gDchvKD6agnzkIc",
+  "preenchimento-rugas": "price_1TEZXeEF7gDchvKDZu6zpH2c",
+};
