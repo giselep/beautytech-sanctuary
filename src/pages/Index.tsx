@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import TreatmentsGrid from "@/components/TreatmentsGrid";
+import BookingCTA from "@/components/BookingCTA";
 import AboutSection from "@/components/AboutSection";
 import CTABanner from "@/components/CTABanner";
 import Footer from "@/components/Footer";
@@ -11,6 +12,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <TreatmentsGrid />
+      <BookingCTA />
       <AboutSection />
       <CTABanner />
       <Footer />
