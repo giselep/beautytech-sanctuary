@@ -170,7 +170,52 @@ export const treatments: Treatment[] = [
     category: "Redutora & Flacidez",
     categorySlug: "redutora",
     shortDescription: "Mesoterapia corporal com Hyaluron Pen e Ampolas Concentradas — sem agulhas, sem dor.",
-    fullDescription: "O Body Shape Pen é um tratamento de mesoterapia corporal sem agulhas, que utiliza a tecnologia Hyaluron Pen para aplicar ampolas concentradas redutoras, drenantes e reafirmantes diretamente nas camadas da pele. Graças ao sistema de pressão controlada, os ativos penetram em profundidade, promovendo resultados rápidos, seguros e confortáveis — sem dor, sem hematomas e sem tempo de recuperação. É o protocolo ideal para reduzir gordura localizada, tratar a celulite, melhorar a firmeza da pele e redefinir o contorno corporal. A Hyaluron Pen emite um jato de ar de alta pressão que dispersa microgotas da ampola (com ativos lipolíticos, drenantes ou reafirmantes) na derme, permitindo absorção uniforme e profunda, estimulando o metabolismo celular, a microcirculação e a eliminação de toxinas. O resultado é uma pele mais lisa, firme e tonificada, com melhoria visível desde as primeiras sessões. Ampolas utilizadas: Lipo Redutora (Cafeína, Carnitina, Centella Asiática, Fucus, Ginkgo Biloba) — modela, redefine e afina a silhueta. Anticelulite (Cafeína, Hera, Escina, Castanha-da-Índia, Algas Marinhas) — suaviza a pele e combate a celulite de forma visível. Drenante Detox (Alcachofra, Chá Verde, Ginkgo Biloba, Castanha-da-Índia) — ideal para pós-treino e sensação de leveza corporal. Reafirmante (Silício Orgânico, DMAE, Colagénio Hidrolisado) — firmeza, elasticidade e definição corporal.",
+    fullDescription: "O Body Shape Pen é um tratamento de mesoterapia corporal sem agulhas, que utiliza a tecnologia Hyaluron Pen para aplicar ampolas concentradas redutoras, drenantes e reafirmantes diretamente nas camadas da pele.",
+    sections: [
+      {
+        title: "Como funciona?",
+        text: "A Hyaluron Pen emite um jato de ar de alta pressão que dispersa microgotas da ampola (com ativos lipolíticos, drenantes ou reafirmantes) na derme. Isso permite uma absorção uniforme e profunda, estimulando o metabolismo celular, a microcirculação e a eliminação de toxinas. O resultado é uma pele mais lisa, firme e tonificada, com melhoria visível desde as primeiras sessões."
+      },
+      {
+        title: "Ampolas Utilizadas",
+        items: [
+          {
+            name: "Lipo Redutora",
+            description: "Ativa a lipólise, promovendo a quebra da gordura localizada. Melhora o contorno corporal e a textura da pele.",
+            actives: "Cafeína, Carnitina, Centella Asiática, Fucus, Ginkgo Biloba",
+            quote: "Modela, redefine e afina a silhueta."
+          },
+          {
+            name: "Anticelulite",
+            description: "Atua na microcirculação e drenagem, reduzindo o aspeto \"casca de laranja\". Melhora a firmeza e a uniformidade da pele.",
+            actives: "Cafeína, Hera, Escina, Castanha-da-Índia, Algas Marinhas",
+            quote: "Suaviza a pele e combate a celulite de forma visível."
+          },
+          {
+            name: "Drenante Detox",
+            description: "Elimina retenção de líquidos e toxinas. Alivia a sensação de inchaço e peso nas pernas.",
+            actives: "Alcachofra, Chá Verde, Ginkgo Biloba, Castanha-da-Índia",
+            quote: "Ideal para pós-treino e sensação de leveza corporal."
+          },
+          {
+            name: "Reafirmante",
+            description: "Estimula colagénio e elastina, melhorando a tonicidade e elasticidade da pele. Excelente para braços, abdómen e coxas internas.",
+            actives: "Silício Orgânico, DMAE, Colagénio Hidrolisado",
+            quote: "Firmeza, elasticidade e definição corporal."
+          }
+        ]
+      },
+      {
+        title: "Indicações Principais",
+        indications: [
+          "Gordura localizada",
+          "Celulite (casca de laranja)",
+          "Flacidez cutânea",
+          "Retenção de líquidos",
+          "Falta de firmeza pós-treino"
+        ]
+      }
+    ],
     benefits: [
       "Sem agulhas, sem dor e sem hematomas",
       "Reduz gordura localizada com ampola Lipo Redutora",
