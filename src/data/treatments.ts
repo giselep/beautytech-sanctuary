@@ -461,7 +461,7 @@ export const treatments: Treatment[] = [
     duration: "Mensal",
     price: "65€/mês",
     priceNote: "Antes 105€",
-    image: "treatment-massage",
+    image: "treatment-fisio-localizada",
   },
   {
     id: "fisio-modelado",
@@ -492,7 +492,7 @@ export const treatments: Treatment[] = [
     duration: "Mensal",
     price: "160€/mês",
     priceNote: "Antes 305€",
-    image: "treatment-body",
+    image: "treatment-fisio-modelado",
   },
   {
     id: "intensivo-flacidez-gordura",
@@ -515,7 +515,7 @@ export const treatments: Treatment[] = [
     benefits: ["HIFU + radiofrequência combinados", "Estimulação contínua de colagénio", "Drenagem eficaz da gordura tratada", "Redução de flacidez progressiva", "Resultados até 12-18 meses", "Facilidades de pagamento disponíveis"],
     duration: "3 meses",
     price: "A partir de 280€",
-    image: "treatment-hifu",
+    image: "treatment-intensivo-corporal",
     subTreatments: [
       { name: "Barriga + Flancos (HIFU + 5x RF)", price: "580€" },
       { name: "Braços (HIFU + 3x RF)", price: "280€" },
@@ -545,7 +545,7 @@ export const treatments: Treatment[] = [
     duration: "3 meses",
     price: "500€",
     priceNote: "Antes 680€",
-    image: "treatment-hifu-facial",
+    image: "treatment-facial-intensivo",
   },
   {
     id: "eliminacao-pelos",
@@ -566,7 +566,7 @@ export const treatments: Treatment[] = [
     benefits: ["Preço igual para homem e mulher", "Corpo completo com virilha completa", "Resultados duradouros e definitivos", "Sessões espaçadas para máxima eficácia", "Oferta de sessão adicional gratuita", "Facilidades de pagamento"],
     duration: "Variável",
     price: "A partir de 275€",
-    image: "treatment-laser",
+    image: "treatment-eliminacao-pelos",
     subTreatments: [
       { name: "Pacote 5 Sessões (corpo completo)", price: "275€" },
       { name: "Pacote 8 Sessões (corpo completo)", price: "400€" },
