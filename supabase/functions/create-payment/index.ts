@@ -25,6 +25,7 @@ serve(async (req) => {
     const sessionParams: Stripe.Checkout.SessionCreateParams = {
       line_items: [{ price: priceId, quantity: 1 }],
       mode: "payment",
+      locale: "pt",
       success_url: `${req.headers.get("origin")}/pagamento-sucesso?tratamento=${encodeURIComponent(treatmentName || "")}&gift=${isGift ? "true" : "false"}`,
       cancel_url: `${req.headers.get("origin")}/pagamento-cancelado`,
       metadata: {
