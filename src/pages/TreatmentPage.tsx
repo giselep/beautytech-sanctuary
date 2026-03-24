@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Clock, Check, CreditCard, CalendarDays, ShoppingBag, Gift } from "lucide-react";
+import { ArrowLeft, Clock, Check, CreditCard, CalendarDays, ShoppingBag, Gift, ChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTABanner from "@/components/CTABanner";
 import { getTreatmentById, getTreatmentsByCategory } from "@/data/treatments";
 import { getImage } from "@/components/CategoryCard";
-import { treatmentPriceMap } from "@/data/stripe-prices";
+import { treatmentPriceMap, subTreatmentPriceMap } from "@/data/stripe-prices";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -16,19 +16,39 @@ const TreatmentPage = () => {
   const treatment = getTreatmentById(id || "");
   const [payLoading, setPayLoading] = useState(false);
   const [giftLoading, setGiftLoading] = useState(false);
+  const [selectedSub, setSelectedSub] = useState<string>("");
   const { toast } = useToast();
+
+  const hasSubPrices = treatment ? !!subTreatmentPriceMap[treatment.id] : false;
+  const hasSinglePrice = treatment ? !!treatmentPriceMap[treatment.id] : false;
+
+  const getSelectedPriceId = (): string | null => {
+    if (!treatment) return null;
+    if (hasSubPrices) {
+      return subTreatmentPriceMap[treatment.id]?.[selectedSub] || null;
+    }
+    return treatmentPriceMap[treatment.id] || null;
+  };
 
   const handlePayment = async (isGift: boolean) => {
     if (!treatment) return;
-    const priceId = treatmentPriceMap[treatment.id];
+
+    if (hasSubPrices && !selectedSub) {
+      toast({ title: "Selecione uma opção", description: "Escolha a zona/área antes de continuar.", variant: "destructive" });
+      return;
+    }
+
+    const priceId = getSelectedPriceId();
     if (!priceId) {
       toast({ title: "Erro", description: "Pagamento não disponível para este tratamento.", variant: "destructive" });
       return;
     }
+
     isGift ? setGiftLoading(true) : setPayLoading(true);
     try {
+      const treatmentLabel = hasSubPrices ? `${treatment.name} - ${selectedSub}` : treatment.name;
       const { data, error } = await supabase.functions.invoke("create-payment", {
-        body: { priceId, treatmentName: treatment.name, isGift },
+        body: { priceId, treatmentName: treatmentLabel, isGift },
       });
       if (error) throw error;
       if (data?.url) window.open(data.url, "_blank");
@@ -51,6 +71,8 @@ const TreatmentPage = () => {
   const relatedTreatments = getTreatmentsByCategory(treatment.categorySlug)
     .filter((t) => t.id !== treatment.id)
     .slice(0, 3);
+
+  const canPay = hasSubPrices ? !!selectedSub : hasSinglePrice;
 
   return (
     <div className="min-h-screen">
@@ -127,17 +149,35 @@ const TreatmentPage = () => {
                         Tabela de Preços
                       </h3>
                       <div className="rounded-2xl border border-border overflow-hidden mb-8">
-                        {treatment.subTreatments.map((sub, i) => (
-                          <div
-                            key={i}
-                            className={`flex items-center justify-between px-5 py-3.5 font-body ${
-                              i % 2 === 0 ? "bg-soft-pink" : "bg-background"
-                            }`}
-                          >
-                            <span className="text-foreground text-sm">{sub.name}</span>
-                            <span className="font-display font-bold text-primary">{sub.price}</span>
-                          </div>
-                        ))}
+                        {treatment.subTreatments.map((sub, i) => {
+                          const isSelectable = hasSubPrices;
+                          const isSelected = selectedSub === sub.name;
+                          return (
+                            <div
+                              key={i}
+                              onClick={isSelectable ? () => setSelectedSub(sub.name) : undefined}
+                              className={`flex items-center justify-between px-5 py-3.5 font-body transition-all ${
+                                isSelectable ? "cursor-pointer hover:bg-primary/5" : ""
+                              } ${
+                                isSelected
+                                  ? "bg-primary/10 border-l-4 border-l-primary"
+                                  : i % 2 === 0
+                                  ? "bg-soft-pink"
+                                  : "bg-background"
+                              }`}
+                            >
+                              <span className={`text-sm ${isSelected ? "text-primary font-semibold" : "text-foreground"}`}>
+                                {isSelectable && (
+                                  <span className={`inline-block w-4 h-4 rounded-full border-2 mr-3 align-middle ${
+                                    isSelected ? "bg-primary border-primary" : "border-muted-foreground/30"
+                                  }`} />
+                                )}
+                                {sub.name}
+                              </span>
+                              <span className="font-display font-bold text-primary">{sub.price}</span>
+                            </div>
+                          );
+                        })}
                       </div>
                     </>
                   )}
@@ -171,6 +211,19 @@ const TreatmentPage = () => {
                       )}
                     </div>
 
+                    {/* Sub-treatment selector hint */}
+                    {hasSubPrices && !selectedSub && (
+                      <p className="text-center font-body text-xs text-amber-600 bg-amber-50 rounded-lg p-2 mb-3">
+                        👆 Selecione uma zona na tabela de preços para comprar
+                      </p>
+                    )}
+
+                    {hasSubPrices && selectedSub && (
+                      <p className="text-center font-body text-sm text-primary font-semibold mb-3">
+                        ✓ {selectedSub}
+                      </p>
+                    )}
+
                     <Link
                       to={`/agendar?tratamento=${treatment.id}`}
                       className="w-full inline-flex items-center justify-center gap-2 bg-gradient-hero text-primary-foreground px-6 py-4 rounded-full text-base font-semibold font-body hover:opacity-90 transition-all hover:scale-105 shadow-lg mb-3"
@@ -181,7 +234,7 @@ const TreatmentPage = () => {
 
                     <button
                       onClick={() => handlePayment(false)}
-                      disabled={payLoading || !treatmentPriceMap[treatment.id]}
+                      disabled={payLoading || !canPay}
                       className="w-full inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-primary hover:text-primary-foreground transition-all mb-3 disabled:opacity-50"
                     >
                       {payLoading ? (
@@ -194,7 +247,7 @@ const TreatmentPage = () => {
 
                     <button
                       onClick={() => handlePayment(true)}
-                      disabled={giftLoading || !treatmentPriceMap[treatment.id]}
+                      disabled={giftLoading || !canPay}
                       className="w-full inline-flex items-center justify-center gap-2 border border-gold text-gold px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-gold hover:text-primary-foreground transition-all disabled:opacity-50"
                     >
                       {giftLoading ? (

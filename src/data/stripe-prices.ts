@@ -1,5 +1,6 @@
 /**
- * Maps treatment IDs to Stripe price IDs
+ * Maps treatment IDs to Stripe price IDs.
+ * For treatments with sub-treatments, use subTreatmentPriceMap instead.
  */
 export const treatmentPriceMap: Record<string, string> = {
   "drenagem-linfatica": "price_1TEZVnEF7gDchvKDuqcXcg3u",
@@ -12,7 +13,6 @@ export const treatmentPriceMap: Record<string, string> = {
   "hifu-corporal": "price_1TEZXUef7gDchvKDbv10cKWG",
   "massagem-redutora": "price_1TEZX1EF7gDchvKD6Ue5CXWz",
   "body-shape-pen": "price_1TEZX2EF7gDchvKDTkM4dee6",
-  "depilacao-laser": "price_1TEZXZEF7gDchvKD4bEnXhO6",
   "hifu-facial": "price_1TEZXWEF7gDchvKDO4KSUB2q",
   "pure-facial": "price_1TEZX6EF7gDchvKDwpO20LCC",
   "fios-seda": "price_1TEZX7EF7gDchvKDRE2zyLLu",
@@ -29,4 +29,20 @@ export const treatmentPriceMap: Record<string, string> = {
   "perda-medidas": "price_1TEZXOEF7gDchvKDhA4eA8G8",
   "crescimento-capilar": "price_1TEZXfEF7gDchvKD6agnzkIc",
   "preenchimento-rugas": "price_1TEZXeEF7gDchvKDZu6zpH2c",
+};
+
+/**
+ * Maps treatment IDs → sub-treatment name → Stripe price ID.
+ * Used for treatments that have multiple pricing options (zones, areas, etc.).
+ */
+export const subTreatmentPriceMap: Record<string, Record<string, string>> = {
+  "depilacao-laser": {
+    "Virilha Simples": "price_1TEd3cEF7gDchvKDJ8YPvjpP",
+    "Axila": "price_1TEd3eEF7gDchvKDFj62A389",
+    "Axila + Virilha + Buço": "price_1TEd3fEF7gDchvKDLuYRssZL",
+    "Braços + Axila ou Virilha": "price_1TEd3fEF7gDchvKD5yv9xya5",
+    "Meia Perna + Axila ou Virilha": "price_1TEd3hEF7gDchvKDjSymnw8x",
+    "Corpo Completo (virilha simples)": "price_1TEd3iEF7gDchvKDcX4IPewA",
+    "Corpo Completo (virilha completa)": "price_1TEd3jEF7gDchvKDgn5rH07z",
+  },
 };
