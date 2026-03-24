@@ -33,6 +33,7 @@ serve(async (req) => {
       line_items: [{ price: priceId, quantity: 1 }],
       mode: "payment",
       locale: "pt",
+      payment_method_types: amountInCents >= 6000 ? ["card", "klarna"] : ["card"],
       success_url: `${req.headers.get("origin")}/pagamento-sucesso?tratamento=${encodeURIComponent(treatmentName || "")}&gift=${isGift ? "true" : "false"}`,
       cancel_url: `${req.headers.get("origin")}/pagamento-cancelado`,
       metadata: {
