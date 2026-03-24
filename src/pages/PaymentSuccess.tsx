@@ -59,7 +59,7 @@ const PaymentSuccess = () => {
                   Apresente este voucher na receção para agendar o tratamento.
                 </p>
                 <p className="font-body text-xs text-muted-foreground mt-1">
-                  📞 +351 914 997 187
+                  📞 +351 931 670 667
                 </p>
               </div>
             </motion.div>
