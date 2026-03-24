@@ -65,12 +65,6 @@ const Footer = () => {
                   +351 931 670 667
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-primary" />
-                <a href="tel:+351931670667" className="font-body text-sm text-primary-foreground/60 hover:text-primary transition-colors">
-                  +351 931 670 667
-                </a>
-              </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-0.5" />
                 <span className="font-body text-sm text-primary-foreground/60">
