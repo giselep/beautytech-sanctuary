@@ -34,7 +34,11 @@ import imgPreenchimentoRugas from "@/assets/treatment-preenchimento-rugas.webp";
 import imgLiberacaoMuscular from "@/assets/treatment-liberacao-muscular.webp";
 import imgEmpinaBumbum from "@/assets/treatment-empina-bumbum.webp";
 import imgPerdaMedidas from "@/assets/treatment-perda-medidas.webp";
-
+import imgFisioLocalizada from "@/assets/treatment-fisio-localizada.webp";
+import imgFisioModelado from "@/assets/treatment-fisio-modelado.webp";
+import imgIntensivoCorporal from "@/assets/treatment-intensivo-corporal.webp";
+import imgFacialIntensivo from "@/assets/treatment-facial-intensivo.webp";
+import imgEliminacaoPelos from "@/assets/treatment-eliminacao-pelos.webp";
 const imageMap: Record<string, string> = {
   "treatment-drenagem": imgDrenagem,
   "treatment-body": imgBody,
@@ -66,6 +70,11 @@ const imageMap: Record<string, string> = {
   "treatment-liberacao-muscular": imgLiberacaoMuscular,
   "treatment-empina-bumbum": imgEmpinaBumbum,
   "treatment-perda-medidas": imgPerdaMedidas,
+  "treatment-fisio-localizada": imgFisioLocalizada,
+  "treatment-fisio-modelado": imgFisioModelado,
+  "treatment-intensivo-corporal": imgIntensivoCorporal,
+  "treatment-facial-intensivo": imgFacialIntensivo,
+  "treatment-eliminacao-pelos": imgEliminacaoPelos,
 };
 
 export const getImage = (key: string) => imageMap[key] || imgFacial;
