@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Clock, Check, Phone, CreditCard } from "lucide-react";
+import { ArrowLeft, Clock, Check, Phone, CreditCard, CalendarDays, ShoppingBag, Gift } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTABanner from "@/components/CTABanner";
@@ -142,13 +142,29 @@ const TreatmentPage = () => {
                       )}
                     </div>
 
-                    <a
-                      href="tel:+351914997187"
+                    <Link
+                      to={`/agendar?tratamento=${treatment.id}`}
                       className="w-full inline-flex items-center justify-center gap-2 bg-gradient-hero text-primary-foreground px-6 py-4 rounded-full text-base font-semibold font-body hover:opacity-90 transition-all hover:scale-105 shadow-lg mb-3"
                     >
-                      <Phone className="w-5 h-5" />
-                      Agendar Agora
+                      <CalendarDays className="w-5 h-5" />
+                      Agendar Tratamento
+                    </Link>
+
+                    <a
+                      href="tel:+351914997187"
+                      className="w-full inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-primary hover:text-primary-foreground transition-all mb-3"
+                    >
+                      <ShoppingBag className="w-4 h-4" />
+                      Comprar Online
                     </a>
+
+                    <Link
+                      to={`/agendar?tratamento=${treatment.id}`}
+                      className="w-full inline-flex items-center justify-center gap-2 border border-gold text-gold px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-gold hover:text-primary-foreground transition-all"
+                    >
+                      <Gift className="w-4 h-4" />
+                      Oferecer de Presente
+                    </Link>
 
                     <p className="text-center font-body text-xs text-muted-foreground flex items-center justify-center gap-1 mt-3">
                       <CreditCard className="w-3.5 h-3.5" />
