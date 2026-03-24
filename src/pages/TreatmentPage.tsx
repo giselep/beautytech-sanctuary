@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Clock, Check, CreditCard, CalendarDays, ShoppingBag, Gift, ChevronDown } from "lucide-react";
+import { ArrowLeft, Clock, Check, CreditCard, CalendarDays, ShoppingBag, Gift } from "lucide-react";
+import TreatmentSections from "@/components/TreatmentSections";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTABanner from "@/components/CTABanner";
