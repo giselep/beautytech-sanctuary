@@ -23,14 +23,14 @@ const CTABanner = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+351914997187"
+              href="tel:+351931670667"
               className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-full text-base font-semibold font-body hover:bg-primary-foreground/90 transition-all hover:scale-105"
             >
               <Phone className="w-5 h-5" />
               Ligar Agora
             </a>
             <a
-              href="tel:+351914997187"
+              href="tel:+351931670667"
               className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/40 text-primary-foreground px-8 py-4 rounded-full text-base font-semibold font-body hover:bg-primary-foreground/10 transition-all"
             >
               <Calendar className="w-5 h-5" />

@@ -13,7 +13,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { parseDurationMinutes, formatWhatsAppMessage } from "@/lib/booking-utils";
 import { useToast } from "@/hooks/use-toast";
 
-const WHATSAPP_NUMBER = "351914997187";
+const WHATSAPP_NUMBER = "351931670667";
 
 const BookingPage = () => {
   const [searchParams] = useSearchParams();

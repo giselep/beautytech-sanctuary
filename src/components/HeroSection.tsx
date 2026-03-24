@@ -66,7 +66,7 @@ const HeroSection = () => {
               Ver Tratamentos
             </a>
             <a
-              href="tel:+351914997187"
+              href="tel:+351931670667"
               className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full text-base font-semibold font-body hover:bg-primary-foreground/10 transition-all backdrop-blur-sm"
             >
               Agendar Consulta

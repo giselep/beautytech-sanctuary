@@ -268,7 +268,6 @@ const TreatmentPage = () => {
                   <div className="bg-card rounded-2xl border border-border p-6">
                     <h4 className="font-display font-semibold text-foreground mb-3">Contacto</h4>
                     <div className="space-y-2 font-body text-sm text-muted-foreground">
-                      <p>📞 +351 914 997 187</p>
                       <p>📞 +351 931 670 667</p>
                       <p>📍 Liberty Fitness Center</p>
                     </div>

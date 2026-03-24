@@ -109,7 +109,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href="tel:+351914997187"
+              href="tel:+351931670667"
               className="inline-flex items-center gap-2 bg-gradient-hero text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
             >
               <Phone className="w-4 h-4" />
@@ -194,11 +194,11 @@ const Navbar = () => {
                 Contacto
               </a>
               <a
-                href="tel:+351914997187"
+                href="tel:+351931670667"
                 className="inline-flex items-center gap-2 bg-gradient-hero text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold"
               >
                 <Phone className="w-4 h-4" />
-                +351 914 997 187
+                +351 931 670 667
               </a>
             </div>
           </motion.div>
