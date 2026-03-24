@@ -434,6 +434,144 @@ export const treatments: Treatment[] = [
     priceNote: "Antes 220€",
     image: "treatment-perda-medidas",
   },
+  {
+    id: "fisio-localizada",
+    name: "Fisio Localizada",
+    category: "Massagens & Combos",
+    categorySlug: "massagens",
+    shortDescription: "3 massagens terapêuticas + 2 sessões complementares + 1 oferta.",
+    fullDescription: "Pacote mensal que reúne 3 massagens terapêuticas localizadas, combinadas com 2 sessões de um tratamento à escolha (manta térmica, detox pés, eletroestimulação ou pressoterapia), mais 1 sessão adicional gratuita.",
+    sections: [
+      {
+        title: "Detalhes do Pacote",
+        text: "3 massagens terapêuticas localizadas em áreas específicas do corpo para alívio de dores ou tensão muscular. 2 sessões de tratamentos complementares à escolha: manta térmica, detox pés, eletroestimulação ou pressoterapia."
+      },
+      {
+        title: "Vantagens",
+        indications: [
+          "Recuperação rápida e eficaz após o treino",
+          "Alívio da fadiga e melhoria da circulação",
+          "Prevenção de lesões e maior bem-estar muscular",
+          "Desconto progressivo para quem faz duas sessões por mês",
+          "Sessão gratuita adicional incluída"
+        ]
+      }
+    ],
+    benefits: ["Recuperação rápida pós-treino", "Alívio da fadiga muscular", "Melhoria da circulação", "Prevenção de lesões", "Sessão gratuita incluída", "Adaptável às necessidades do cliente"],
+    duration: "Mensal",
+    price: "65€/mês",
+    priceNote: "Antes 105€",
+    image: "treatment-massage",
+  },
+  {
+    id: "fisio-modelado",
+    name: "Fisio Modelado",
+    category: "Massagens & Combos",
+    categorySlug: "massagens",
+    shortDescription: "Protocolo completo: drenagens, massagens, Just4You e tratamentos complementares.",
+    fullDescription: "Pacote mensal intensivo com 2 drenagens linfáticas (ou modeladora/redutora), 2 massagens terapêuticas localizadas, 2 sessões complementares à escolha e 1 sessão Just4You (radiofrequência, cavitação, LEDs, crio). Inclui oferta de 1 sessão extra + 2 Just4You adicionais.",
+    sections: [
+      {
+        title: "O Que Inclui",
+        indications: [
+          "2x drenagens linfáticas, modeladora ou redutora (35 min cada)",
+          "2x massagens terapêuticas localizadas (15 min)",
+          "2x sessões à escolha (manta térmica, detox pés, eletroestimulação ou pressoterapia)",
+          "1x Just4You (radiofrequência, cavitação, LEDs, crio)"
+        ]
+      },
+      {
+        title: "Oferta Especial",
+        indications: [
+          "1x sessão adicional gratuita (manta térmica, detox pés, eletroestimulação ou pressoterapia)",
+          "2x sessões extra de Just4You"
+        ]
+      }
+    ],
+    benefits: ["Drenagem e modelação corporal", "Recuperação muscular completa", "Redução de medidas e celulite", "Firmeza e tonificação da pele", "Múltiplas tecnologias combinadas", "Oferta de sessões gratuitas"],
+    duration: "Mensal",
+    price: "160€/mês",
+    priceNote: "Antes 305€",
+    image: "treatment-body",
+  },
+  {
+    id: "intensivo-flacidez-gordura",
+    name: "Intensivo Flacidez e Gordura",
+    category: "Massagens & Combos",
+    categorySlug: "massagens",
+    shortDescription: "Protocolo de 3 meses com HIFU Corporal + radiofrequências semanais.",
+    fullDescription: "Protocolo intensivo de 3 meses que combina HIFU Corporal com sessões semanais de radiofrequência (ou cavitação/LED) para potenciar e acelerar resultados. O HIFU inicia a destruição de células de gordura e a radiofrequência semanal mantém o estímulo de colagénio ativo.",
+    sections: [
+      {
+        title: "Porque fazer radiofrequência após o HIFU?",
+        items: [
+          { name: "Estimulação contínua de colagénio", description: "O HIFU cria micro-pontos de calor nas camadas profundas. A radiofrequência semanal mantém esse estímulo ativo, ajudando a pele a ficar mais firme." },
+          { name: "Melhora a drenagem da gordura", description: "Depois do HIFU, as células de gordura destruídas precisam ser eliminadas. A radiofrequência ativa a circulação e o sistema linfático." },
+          { name: "Reduz flacidez durante o processo", description: "Quando a gordura reduz, pode aparecer flacidez. A radiofrequência contrai as fibras de colagénio, mantendo a pele firme." },
+          { name: "Resultados progressivos", description: "O protocolo semanal cria um efeito cumulativo, melhorando semana após semana durante 3 meses." }
+        ]
+      }
+    ],
+    benefits: ["HIFU + radiofrequência combinados", "Estimulação contínua de colagénio", "Drenagem eficaz da gordura tratada", "Redução de flacidez progressiva", "Resultados até 12-18 meses", "Facilidades de pagamento disponíveis"],
+    duration: "3 meses",
+    price: "A partir de 280€",
+    image: "treatment-hifu",
+    subTreatments: [
+      { name: "Barriga + Flancos (HIFU + 5x RF)", price: "580€" },
+      { name: "Braços (HIFU + 3x RF)", price: "280€" },
+    ],
+  },
+  {
+    id: "facial-intensivo",
+    name: "Facial Intensivo Flacidez e Rugas",
+    category: "Massagens & Combos",
+    categorySlug: "massagens",
+    shortDescription: "Protocolo facial de 3 meses: HIFU + limpeza + booster + fios de seda + RF.",
+    fullDescription: "Protocolo completo de rejuvenescimento facial de 3 meses que combina HIFU rosto e papada, limpeza de pele profunda, booster com ácido hialurónico, fios de seda (colagénio) e radiofrequência facial. Inclui oferta de 2 sessões extra de radiofrequência.",
+    sections: [
+      {
+        title: "O Protocolo Inclui",
+        indications: [
+          "1x HIFU rosto e papada",
+          "1x limpeza de pele profunda com máscara",
+          "1x booster com ácido hialurónico",
+          "1x fios de seda (colagénio)",
+          "2x radiofrequência facial",
+          "OFERTA: 2x radiofrequências extra"
+        ]
+      }
+    ],
+    benefits: ["Rejuvenescimento profundo e duradouro", "Melhoria do contorno facial", "Textura da pele renovada", "Efeito natural sem cirurgia", "Múltiplas tecnologias sinérgicas", "Facilidades de pagamento"],
+    duration: "3 meses",
+    price: "500€",
+    priceNote: "Antes 680€",
+    image: "treatment-hifu-facial",
+  },
+  {
+    id: "eliminacao-pelos",
+    name: "Eliminação Definitiva de Pêlos",
+    category: "Massagens & Combos",
+    categorySlug: "massagens",
+    shortDescription: "Pacotes de 5 ou 8 sessões de corpo completo com depilação a laser.",
+    fullDescription: "Pacotes de depilação a laser corpo completo com virilha completa, para homem ou mulher. Solução prática, indolor e definitiva para eliminação dos pelos, com acompanhamento profissional especializado e sessões espaçadas para otimizar resultados.",
+    sections: [
+      {
+        title: "Detalhes dos Pacotes",
+        items: [
+          { name: "Pacote 5 Sessões", description: "5 sessões de corpo completo com virilha completa. Cada sessão por 55€ (antes 85€). Preço total: 275€." },
+          { name: "Pacote 8 Sessões", description: "8 sessões de corpo completo com virilha completa. Cada sessão por 50€ (antes 85€). Preço total: 400€." }
+        ]
+      }
+    ],
+    benefits: ["Preço igual para homem e mulher", "Corpo completo com virilha completa", "Resultados duradouros e definitivos", "Sessões espaçadas para máxima eficácia", "Oferta de sessão adicional gratuita", "Facilidades de pagamento"],
+    duration: "Variável",
+    price: "A partir de 275€",
+    image: "treatment-laser",
+    subTreatments: [
+      { name: "Pacote 5 Sessões (corpo completo)", price: "275€" },
+      { name: "Pacote 8 Sessões (corpo completo)", price: "400€" },
+    ],
+  },
   // CAPILAR
   {
     id: "crescimento-capilar",
