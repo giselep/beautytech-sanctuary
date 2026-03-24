@@ -10,7 +10,6 @@ export const treatmentPriceMap: Record<string, string> = {
   "just4you-corporal": "price_1TEZWxEF7gDchvKD5yBdsoaJ",
   "eletroestimulacao": "price_1TEZWyEF7gDchvKDQyiBB9qv",
   "pump-up": "price_1TEZWzEF7gDchvKD5PUWAXFA",
-  "hifu-corporal": "price_1TEZXUef7gDchvKDbv10cKWG",
   "massagem-redutora": "price_1TEZX1EF7gDchvKD6Ue5CXWz",
   "body-shape-pen": "price_1TEZX2EF7gDchvKDTkM4dee6",
   "hifu-facial": "price_1TEZXWEF7gDchvKDO4KSUB2q",
