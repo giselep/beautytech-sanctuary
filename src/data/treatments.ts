@@ -1,3 +1,10 @@
+export interface TreatmentSection {
+  title: string;
+  text?: string;
+  items?: { name: string; description: string; actives?: string; quote?: string }[];
+  indications?: string[];
+}
+
 export interface Treatment {
   id: string;
   name: string;
@@ -5,6 +12,7 @@ export interface Treatment {
   categorySlug: string;
   shortDescription: string;
   fullDescription: string;
+  sections?: TreatmentSection[];
   benefits: string[];
   duration?: string;
   price: string;
