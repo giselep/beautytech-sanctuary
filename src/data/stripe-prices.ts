@@ -45,4 +45,16 @@ export const subTreatmentPriceMap: Record<string, Record<string, string>> = {
     "Corpo Completo (virilha simples)": "price_1TEd3iEF7gDchvKDcX4IPewA",
     "Corpo Completo (virilha completa)": "price_1TEd3jEF7gDchvKDgn5rH07z",
   },
+  "hifu-corporal": {
+    "Colo/Peito": "price_1TEd6JEF7gDchvKD3TPJgBhY",
+    "Braços": "price_1TEd6KEF7gDchvKDXyiJTXUW",
+    "Barriga": "price_1TEd6LEF7gDchvKDkzU2umY2",
+    "Flancos": "price_1TEd6MEF7gDchvKD38J0ZMIp",
+    "Barriga + Flancos": "price_1TEd6NEF7gDchvKDHdVpxyeg",
+    "Costas": "price_1TEd6NEF7gDchvKDUVSleLGE",
+    "Glúteos": "price_1TEd6OEF7gDchvKD2i19mtAA",
+    "Joelhos": "price_1TEd6PEF7gDchvKDXLwMNJbS",
+    "Coxas": "price_1TEd6QEF7gDchvKDf7HbM5e6",
+    "Pernas Completas": "price_1TEd6REF7gDchvKDfAXD1jiS",
+  },
 };
