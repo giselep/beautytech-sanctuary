@@ -133,6 +133,13 @@ const TreatmentPage = () => {
                     {treatment.fullDescription}
                   </p>
 
+                  {/* Structured sections */}
+                  {treatment.sections && treatment.sections.length > 0 && (
+                    <div className="mb-8">
+                      <TreatmentSections sections={treatment.sections} />
+                    </div>
+                  )}
+
                   {/* Benefits */}
                   <h3 className="font-display text-xl font-bold text-foreground mb-4">
                     Benefícios
