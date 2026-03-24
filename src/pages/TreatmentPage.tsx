@@ -1,15 +1,44 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Clock, Check, Phone, CreditCard, CalendarDays, ShoppingBag, Gift } from "lucide-react";
+import { ArrowLeft, Clock, Check, CreditCard, CalendarDays, ShoppingBag, Gift } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTABanner from "@/components/CTABanner";
 import { getTreatmentById, getTreatmentsByCategory } from "@/data/treatments";
 import { getImage } from "@/components/CategoryCard";
+import { treatmentPriceMap } from "@/data/stripe-prices";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const TreatmentPage = () => {
   const { id } = useParams<{ id: string }>();
   const treatment = getTreatmentById(id || "");
+  const [payLoading, setPayLoading] = useState(false);
+  const [giftLoading, setGiftLoading] = useState(false);
+  const { toast } = useToast();
+
+  const handlePayment = async (isGift: boolean) => {
+    if (!treatment) return;
+    const priceId = treatmentPriceMap[treatment.id];
+    if (!priceId) {
+      toast({ title: "Erro", description: "Pagamento não disponível para este tratamento.", variant: "destructive" });
+      return;
+    }
+    isGift ? setGiftLoading(true) : setPayLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("create-payment", {
+        body: { priceId, treatmentName: treatment.name, isGift },
+      });
+      if (error) throw error;
+      if (data?.url) window.open(data.url, "_blank");
+    } catch {
+      toast({ title: "Erro", description: "Não foi possível iniciar o pagamento.", variant: "destructive" });
+    } finally {
+      setPayLoading(false);
+      setGiftLoading(false);
+    }
+  };
 
   if (!treatment) {
     return (
@@ -150,21 +179,31 @@ const TreatmentPage = () => {
                       Agendar Tratamento
                     </Link>
 
-                    <a
-                      href="tel:+351914997187"
-                      className="w-full inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-primary hover:text-primary-foreground transition-all mb-3"
+                    <button
+                      onClick={() => handlePayment(false)}
+                      disabled={payLoading || !treatmentPriceMap[treatment.id]}
+                      className="w-full inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-primary hover:text-primary-foreground transition-all mb-3 disabled:opacity-50"
                     >
-                      <ShoppingBag className="w-4 h-4" />
+                      {payLoading ? (
+                        <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                      ) : (
+                        <ShoppingBag className="w-4 h-4" />
+                      )}
                       Comprar Online
-                    </a>
+                    </button>
 
-                    <Link
-                      to={`/agendar?tratamento=${treatment.id}`}
-                      className="w-full inline-flex items-center justify-center gap-2 border border-gold text-gold px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-gold hover:text-primary-foreground transition-all"
+                    <button
+                      onClick={() => handlePayment(true)}
+                      disabled={giftLoading || !treatmentPriceMap[treatment.id]}
+                      className="w-full inline-flex items-center justify-center gap-2 border border-gold text-gold px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-gold hover:text-primary-foreground transition-all disabled:opacity-50"
                     >
-                      <Gift className="w-4 h-4" />
+                      {giftLoading ? (
+                        <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                      ) : (
+                        <Gift className="w-4 h-4" />
+                      )}
                       Oferecer de Presente
-                    </Link>
+                    </button>
 
                     <p className="text-center font-body text-xs text-muted-foreground flex items-center justify-center gap-1 mt-3">
                       <CreditCard className="w-3.5 h-3.5" />
