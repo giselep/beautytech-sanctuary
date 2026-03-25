@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Phone, Calendar } from "lucide-react";
+import { MessageCircle, Calendar } from "lucide-react";
+
+const WHATSAPP_LINK = "https://wa.me/351931670667";
 
 const CTABanner = () => {
   return (
@@ -23,14 +25,18 @@ const CTABanner = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+351931670667"
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-full text-base font-semibold font-body hover:bg-primary-foreground/90 transition-all hover:scale-105"
             >
-              <Phone className="w-5 h-5" />
-              Ligar Agora
+              <MessageCircle className="w-5 h-5" />
+              WhatsApp
             </a>
             <a
-              href="tel:+351931670667"
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/40 text-primary-foreground px-8 py-4 rounded-full text-base font-semibold font-body hover:bg-primary-foreground/10 transition-all"
             >
               <Calendar className="w-5 h-5" />
