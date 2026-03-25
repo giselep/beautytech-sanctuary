@@ -1,16 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, MessageCircle, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/logo.webp";
 import { categories } from "@/data/treatments";
 
-const navLinks = [
-  { label: "Início", href: "/" },
-  { label: "Agendar", href: "/agendar" },
-  { label: "Sobre", href: "/#sobre" },
-  { label: "Contacto", href: "/#contacto" },
-];
+const WHATSAPP_LINK = "https://wa.me/351931670667";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +34,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="BeautyTech" className="h-14 w-auto" />
+            <img src={logo} alt="BeautyTech Braga" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop nav */}
@@ -109,10 +104,12 @@ const Navbar = () => {
             </a>
 
             <a
-              href="tel:+351931670667"
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-hero text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
             >
-              <Phone className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4" />
               Agendar
             </a>
           </div>
@@ -121,6 +118,7 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 text-foreground"
+            aria-label="Menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -194,11 +192,13 @@ const Navbar = () => {
                 Contacto
               </a>
               <a
-                href="tel:+351931670667"
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-hero text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold"
               >
-                <Phone className="w-4 h-4" />
-                +351 931 670 667
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp 931 670 667
               </a>
             </div>
           </motion.div>

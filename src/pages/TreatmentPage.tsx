@@ -295,8 +295,12 @@ const TreatmentPage = () => {
                   <div className="bg-card rounded-2xl border border-border p-6">
                     <h4 className="font-display font-semibold text-foreground mb-3">Contacto</h4>
                     <div className="space-y-2 font-body text-sm text-muted-foreground">
-                      <p>📞 +351 931 670 667</p>
-                      <p>📍 Liberty Fitness Center</p>
+                      <p>
+                        <a href="https://wa.me/351931670667" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                          📞 +351 931 670 667 (WhatsApp)
+                        </a>
+                      </p>
+                      <p>📍 Liberty Fitness Center, Braga</p>
                     </div>
                   </div>
                 </motion.div>

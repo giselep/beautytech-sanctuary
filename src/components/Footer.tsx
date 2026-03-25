@@ -3,6 +3,8 @@ import { Phone, MapPin, Instagram, Facebook } from "lucide-react";
 import logo from "@/assets/logo.webp";
 import { categories } from "@/data/treatments";
 
+const WHATSAPP_LINK = "https://wa.me/351931670667";
+
 const Footer = () => {
   return (
     <footer id="contacto" className="bg-charcoal text-primary-foreground">
@@ -10,9 +12,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <img src={logo} alt="BeautyTech" className="h-16 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="BeautyTech Braga — Estética Avançada" className="h-16 w-auto mb-4 brightness-0 invert" />
             <p className="font-body text-sm text-primary-foreground/60 leading-relaxed">
-              Estética avançada & bem-estar. Tecnologia de ponta para a sua beleza.
+              Estética avançada & bem-estar em Braga. Tecnologia de ponta para a sua beleza no Liberty Fitness Center.
             </p>
           </div>
 
@@ -61,22 +63,22 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <a href="tel:+351931670667" className="font-body text-sm text-primary-foreground/60 hover:text-primary transition-colors">
+                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="font-body text-sm text-primary-foreground/60 hover:text-primary transition-colors">
                   +351 931 670 667
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-0.5" />
                 <span className="font-body text-sm text-primary-foreground/60">
-                  Liberty Fitness Center, Portugal
+                  Liberty Fitness Center, Braga
                 </span>
               </li>
             </ul>
             <div className="flex gap-3 mt-5">
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
@@ -85,7 +87,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center">
           <p className="font-body text-sm text-primary-foreground/40">
-            © {new Date().getFullYear()} BeautyTech — Corpo e Cabelo. Todos os direitos reservados.
+            © {new Date().getFullYear()} BeautyTech — Corpo e Cabelo. Estética Avançada em Braga, Portugal. Todos os direitos reservados.
           </p>
         </div>
       </div>

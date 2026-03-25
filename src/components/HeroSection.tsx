@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-spa.webp";
 
+const WHATSAPP_LINK = "https://wa.me/351931670667";
+
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -9,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="BeautyTech Spa"
+          alt="BeautyTech — Estética avançada em Braga"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/50 to-transparent" />
@@ -26,7 +28,7 @@ const HeroSection = () => {
           >
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-body font-medium text-primary-foreground/90">
-              Estética Avançada & Bem-Estar
+              Estética Avançada em Braga
             </span>
           </motion.div>
 
@@ -49,7 +51,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-body text-lg sm:text-xl text-primary-foreground/70 mb-10 max-w-lg leading-relaxed"
           >
-            Tratamentos de estética corporal e facial com tecnologia de ponta.
+            Tratamentos de estética corporal e facial com tecnologia de ponta em Braga.
             Cuide de si com quem entende de beleza.
           </motion.p>
 
@@ -66,7 +68,9 @@ const HeroSection = () => {
               Ver Tratamentos
             </a>
             <a
-              href="tel:+351931670667"
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-full text-base font-semibold font-body hover:bg-primary-foreground/10 transition-all backdrop-blur-sm"
             >
               Agendar Consulta
