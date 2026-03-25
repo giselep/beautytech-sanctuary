@@ -22,18 +22,19 @@ serve(async (req) => {
       apiVersion: "2025-08-27.basil",
     });
 
-    // Validate minimum amount (60€)
+    // Retrieve price to check amount for payment method selection
     const price = await stripe.prices.retrieve(priceId);
     const amountInCents = price.unit_amount || 0;
-    if (amountInCents < 6000) {
-      throw new Error("O valor mínimo para compra online é de 60€.");
-    }
+
+    // Klarna (installments) only available for amounts >= 60€
+    const paymentMethods: Stripe.Checkout.SessionCreateParams.PaymentMethodType[] =
+      amountInCents >= 6000 ? ["card", "klarna"] : ["card"];
 
     const sessionParams: Stripe.Checkout.SessionCreateParams = {
       line_items: [{ price: priceId, quantity: 1 }],
       mode: "payment",
       locale: "pt",
-      payment_method_types: amountInCents >= 6000 ? ["card", "klarna"] : ["card"],
+      payment_method_types: paymentMethods,
       success_url: `${req.headers.get("origin")}/pagamento-sucesso?tratamento=${encodeURIComponent(treatmentName || "")}&gift=${isGift ? "true" : "false"}`,
       cancel_url: `${req.headers.get("origin")}/pagamento-cancelado`,
       metadata: {

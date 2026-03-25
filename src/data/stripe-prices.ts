@@ -28,6 +28,9 @@ export const treatmentPriceMap: Record<string, string> = {
   "perda-medidas": "price_1TEZXOEF7gDchvKDhA4eA8G8",
   "crescimento-capilar": "price_1TEZXfEF7gDchvKD6agnzkIc",
   "preenchimento-rugas": "price_1TEZXeEF7gDchvKDZu6zpH2c",
+  "facial-intensivo": "price_1TErTjEF7gDchvKDh0ZVqmT2",
+  "fisio-localizada": "price_1TErTkEF7gDchvKD9fsXpyy3",
+  "fisio-modelado": "price_1TErTlEF7gDchvKDtF70ocOB",
 };
 
 /**
@@ -55,5 +58,13 @@ export const subTreatmentPriceMap: Record<string, Record<string, string>> = {
     "Joelhos": "price_1TEd6PEF7gDchvKDXLwMNJbS",
     "Coxas": "price_1TEd6QEF7gDchvKDf7HbM5e6",
     "Pernas Completas": "price_1TEd6REF7gDchvKDfAXD1jiS",
+  },
+  "intensivo-flacidez-gordura": {
+    "Braços (HIFU + 3x RF)": "price_1TErTnEF7gDchvKDAn3qmx9H",
+    "Barriga + Flancos (HIFU + 5x RF)": "price_1TErToEF7gDchvKDh1FZvPhI",
+  },
+  "eliminacao-pelos": {
+    "Pacote 5 Sessões (corpo completo)": "price_1TErTpEF7gDchvKDsz8IvcW9",
+    "Pacote 8 Sessões (corpo completo)": "price_1TErTpEF7gDchvKDydJ34FxM",
   },
 };
