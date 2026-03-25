@@ -84,7 +84,7 @@ const TreatmentPage = () => {
     : parsePrice(treatment.price);
 
   const meetsMinimum = currentPrice >= 60;
-  const canPay = (hasSubPrices ? !!selectedSub : hasSinglePrice) && meetsMinimum;
+  const canPay = hasSubPrices ? !!selectedSub : hasSinglePrice;
 
   return (
     <div className="min-h-screen">
