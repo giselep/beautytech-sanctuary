@@ -251,42 +251,41 @@ const TreatmentPage = () => {
                       Agendar Tratamento
                     </Link>
 
+                    <button
+                      onClick={() => handlePayment(false)}
+                      disabled={payLoading || !canPay}
+                      className="w-full inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-primary hover:text-primary-foreground transition-all mb-3 disabled:opacity-50"
+                    >
+                      {payLoading ? (
+                        <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                      ) : (
+                        <ShoppingBag className="w-4 h-4" />
+                      )}
+                      Comprar Online
+                    </button>
+
+                    <button
+                      onClick={() => handlePayment(true)}
+                      disabled={giftLoading || !canPay}
+                      className="w-full inline-flex items-center justify-center gap-2 border border-gold text-gold px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-gold hover:text-primary-foreground transition-all disabled:opacity-50"
+                    >
+                      {giftLoading ? (
+                        <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                      ) : (
+                        <Gift className="w-4 h-4" />
+                      )}
+                      Oferecer de Presente
+                    </button>
+
                     {meetsMinimum ? (
-                      <>
-                        <button
-                          onClick={() => handlePayment(false)}
-                          disabled={payLoading || !canPay}
-                          className="w-full inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-primary hover:text-primary-foreground transition-all mb-3 disabled:opacity-50"
-                        >
-                          {payLoading ? (
-                            <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
-                          ) : (
-                            <ShoppingBag className="w-4 h-4" />
-                          )}
-                          Comprar Online
-                        </button>
-
-                        <button
-                          onClick={() => handlePayment(true)}
-                          disabled={giftLoading || !canPay}
-                          className="w-full inline-flex items-center justify-center gap-2 border border-gold text-gold px-6 py-3 rounded-full text-sm font-semibold font-body hover:bg-gold hover:text-primary-foreground transition-all disabled:opacity-50"
-                        >
-                          {giftLoading ? (
-                            <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
-                          ) : (
-                            <Gift className="w-4 h-4" />
-                          )}
-                          Oferecer de Presente
-                        </button>
-
-                        <p className="text-center font-body text-xs text-muted-foreground flex items-center justify-center gap-1 mt-3">
-                          <CreditCard className="w-3.5 h-3.5" />
-                          Facilidades de pagamento disponíveis
-                        </p>
-                      </>
+                      <p className="text-center font-body text-xs text-muted-foreground flex items-center justify-center gap-1 mt-3">
+                        <CreditCard className="w-3.5 h-3.5" />
+                        Facilidades de pagamento disponíveis
+                      </p>
                     ) : (
-                      <p className="text-center font-body text-xs text-muted-foreground bg-muted rounded-lg p-3 mt-2">
-                        Compra online disponível para valores a partir de 60€. Para este tratamento, entre em contacto ou agende diretamente.
+                      <p className="text-center font-body text-xs text-muted-foreground flex items-center justify-center gap-1 mt-3">
+                        <CreditCard className="w-3.5 h-3.5" />
+                        Pagamento por cartão e MB WAY
                       </p>
                     )}
                   </div>
