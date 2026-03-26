@@ -57,12 +57,12 @@ const PromotionsSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="https://wa.me/351931670667"
+                href="https://pt.zappysoftware.com/m/BEAUTYTECH"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-body font-semibold px-6 py-3 rounded-full hover:opacity-90 transition-opacity"
               >
-                Saber Mais pelo WhatsApp
+                Compre Já
                 <ArrowRight className="w-4 h-4" />
               </a>
               <p className="font-body text-xs text-muted-foreground self-center">
