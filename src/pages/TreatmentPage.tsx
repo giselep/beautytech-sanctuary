@@ -243,13 +243,15 @@ const TreatmentPage = () => {
                       </p>
                     )}
 
-                    <Link
-                      to={`/agendar?tratamento=${treatment.id}`}
+                    <a
+                      href="https://pt.zappysoftware.com/m/BEAUTYTECH"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-full inline-flex items-center justify-center gap-2 bg-gradient-hero text-primary-foreground px-6 py-4 rounded-full text-base font-semibold font-body hover:opacity-90 transition-all hover:scale-105 shadow-lg mb-3"
                     >
                       <CalendarDays className="w-5 h-5" />
                       Agendar Tratamento
-                    </Link>
+                    </a>
 
                     <button
                       onClick={() => handlePayment(false)}

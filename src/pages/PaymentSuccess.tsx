@@ -80,12 +80,14 @@ const PaymentSuccess = () => {
               Voltar ao Início
             </Link>
             {!isGift && (
-              <Link
-                to="/agendar"
+              <a
+                href="https://pt.zappysoftware.com/m/BEAUTYTECH"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-3 rounded-full font-body font-semibold hover:bg-primary hover:text-primary-foreground transition-all"
               >
                 Agendar Tratamento
-              </Link>
+              </a>
             )}
           </div>
         </div>

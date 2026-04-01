@@ -34,7 +34,7 @@ const CTABanner = () => {
               WhatsApp
             </a>
             <a
-              href={WHATSAPP_LINK}
+              href="https://pt.zappysoftware.com/m/BEAUTYTECH"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/40 text-primary-foreground px-8 py-4 rounded-full text-base font-semibold font-body hover:bg-primary-foreground/10 transition-all"
