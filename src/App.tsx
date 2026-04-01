@@ -23,7 +23,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/categoria/:slug" element={<CategoryPage />} />
           <Route path="/tratamento/:id" element={<TreatmentPage />} />
-          
           <Route path="/pagamento-sucesso" element={<PaymentSuccess />} />
           <Route path="/pagamento-cancelado" element={<PaymentCancelled />} />
           <Route path="*" element={<NotFound />} />
