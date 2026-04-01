@@ -6,7 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import CategoryPage from "./pages/CategoryPage.tsx";
 import TreatmentPage from "./pages/TreatmentPage.tsx";
-import BookingPage from "./pages/BookingPage.tsx";
+
 import PaymentSuccess from "./pages/PaymentSuccess.tsx";
 import PaymentCancelled from "./pages/PaymentCancelled.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -23,7 +23,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/categoria/:slug" element={<CategoryPage />} />
           <Route path="/tratamento/:id" element={<TreatmentPage />} />
-          <Route path="/agendar" element={<BookingPage />} />
+          
           <Route path="/pagamento-sucesso" element={<PaymentSuccess />} />
           <Route path="/pagamento-cancelado" element={<PaymentCancelled />} />
           <Route path="*" element={<NotFound />} />
