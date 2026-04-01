@@ -356,6 +356,7 @@ const TreatmentPage = () => {
                         <img
                           src={getImage(t.image)}
                           alt={t.name}
+                          loading="lazy"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>

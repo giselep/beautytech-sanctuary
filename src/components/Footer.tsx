@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <img src={logo} alt="BeautyTech Braga — Estética Avançada" className="h-16 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="BeautyTech Braga — Estética Avançada" loading="lazy" className="h-16 w-auto mb-4 brightness-0 invert" />
             <p className="font-body text-sm text-primary-foreground/60 leading-relaxed">
               Estética avançada & bem-estar em Braga. Tecnologia de ponta para a sua beleza no Liberty Fitness Center.
             </p>
