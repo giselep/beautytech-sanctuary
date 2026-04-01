@@ -6,7 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import CategoryPage from "./pages/CategoryPage.tsx";
 import TreatmentPage from "./pages/TreatmentPage.tsx";
-import BookingPage from "./pages/BookingPage.tsx";
+
 import PaymentSuccess from "./pages/PaymentSuccess.tsx";
 import PaymentCancelled from "./pages/PaymentCancelled.tsx";
 import NotFound from "./pages/NotFound.tsx";
