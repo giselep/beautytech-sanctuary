@@ -6,6 +6,7 @@ import TreatmentSections from "@/components/TreatmentSections";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTABanner from "@/components/CTABanner";
+import SEOHead from "@/components/SEOHead";
 import { getTreatmentById, getTreatmentsByCategory } from "@/data/treatments";
 import { getImage } from "@/components/CategoryCard";
 import { treatmentPriceMap, subTreatmentPriceMap } from "@/data/stripe-prices";
