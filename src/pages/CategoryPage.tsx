@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Clock, Euro } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { categories, getTreatmentsByCategory } from "@/data/treatments";
 import { getImage } from "@/components/CategoryCard";
 
-// CategoryPage component
 const CategoryPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const category = categories.find((c) => c.slug === slug);
@@ -20,8 +20,23 @@ const CategoryPage = () => {
     );
   }
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://beautytech.lovable.app/" },
+      { "@type": "ListItem", "position": 2, "name": category.name, "item": `https://beautytech.lovable.app/categoria/${slug}` }
+    ]
+  };
+
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={`${category.name} — BeautyTech Braga`}
+        description={`${category.subtitle}. Tratamentos de ${category.name.toLowerCase()} em Braga com tecnologia avançada. Agende já na BeautyTech.`}
+        canonical={`/categoria/${slug}`}
+        jsonLd={breadcrumbJsonLd}
+      />
       <Navbar />
 
       {/* Hero */}
