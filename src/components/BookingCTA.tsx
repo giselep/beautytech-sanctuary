@@ -36,13 +36,15 @@ const BookingCTA = () => {
             ))}
           </div>
 
-          <Link
-            to="/agendar"
+          <a
+            href="https://pt.zappysoftware.com/m/BEAUTYTECH"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-gradient-hero text-primary-foreground px-10 py-4 rounded-full text-lg font-semibold font-body hover:opacity-90 transition-all hover:scale-105 shadow-lg"
           >
             <CalendarDays className="w-5 h-5" />
             Agendar Agora
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>
