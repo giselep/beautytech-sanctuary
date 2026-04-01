@@ -6,6 +6,7 @@ import TreatmentSections from "@/components/TreatmentSections";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTABanner from "@/components/CTABanner";
+import SEOHead from "@/components/SEOHead";
 import { getTreatmentById, getTreatmentsByCategory } from "@/data/treatments";
 import { getImage } from "@/components/CategoryCard";
 import { treatmentPriceMap, subTreatmentPriceMap } from "@/data/stripe-prices";
@@ -86,8 +87,38 @@ const TreatmentPage = () => {
   const meetsMinimum = currentPrice >= 60;
   const canPay = hasSubPrices ? !!selectedSub : hasSinglePrice;
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://beautytech.lovable.app/" },
+      { "@type": "ListItem", "position": 2, "name": treatment.category, "item": `https://beautytech.lovable.app/categoria/${treatment.categorySlug}` },
+      { "@type": "ListItem", "position": 3, "name": treatment.name, "item": `https://beautytech.lovable.app/tratamento/${treatment.id}` }
+    ]
+  };
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": treatment.name,
+    "description": treatment.fullDescription,
+    "provider": {
+      "@type": "BeautySalon",
+      "name": "BeautyTech — Corpo e Cabelo",
+      "address": { "@type": "PostalAddress", "streetAddress": "Liberty Fitness Center", "addressLocality": "Braga", "addressCountry": "PT" }
+    },
+    "areaServed": { "@type": "City", "name": "Braga" },
+    ...(treatment.price && { "offers": { "@type": "Offer", "price": parsePrice(treatment.price), "priceCurrency": "EUR" } })
+  };
+
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={`${treatment.name} em Braga — BeautyTech`}
+        description={`${treatment.shortDescription}. ${treatment.price}. Agende na BeautyTech em Braga.`}
+        canonical={`/tratamento/${treatment.id}`}
+        jsonLd={breadcrumbJsonLd}
+      />
       <Navbar />
 
       <div className="pt-20">
