@@ -8,7 +8,7 @@ interface SEOHeadProps {
   jsonLd?: Record<string, unknown>;
 }
 
-const BASE_URL = "https://beautytech.lovable.app";
+const BASE_URL = "https://beautytech.com.pt";
 
 const SEOHead = ({ title, description, canonical, type = "website", jsonLd }: SEOHeadProps) => {
   const fullCanonical = canonical ? `${BASE_URL}${canonical}` : BASE_URL;
