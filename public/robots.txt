@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://beautytech.lovable.app/sitemap.xml
+Sitemap: https://beautytech.com.pt/sitemap.xml
