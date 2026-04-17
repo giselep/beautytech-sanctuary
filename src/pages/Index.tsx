@@ -11,8 +11,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="BeautyTech Braga — Estética Avançada & Bem-Estar"
-        description="Tratamentos de estética avançada em Braga: HIFU, depilação a laser, drenagem linfática, massagens, faciais e corporais. No Liberty Fitness Center."
+        title="Beautytech Braga — Estética Avançada & Bem-Estar de Luxo"
+        description="Beautytech Braga: tratamentos de estética avançada e massagens de luxo — HIFU, depilação a laser, drenagem linfática, faciais e corporais. Liberty Fitness Center, Braga."
         canonical="/"
       />
       <Navbar />
