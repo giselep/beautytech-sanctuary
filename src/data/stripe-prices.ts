@@ -12,7 +12,6 @@ export const treatmentPriceMap: Record<string, string> = {
   "pump-up": "price_1TEZWzEF7gDchvKD5PUWAXFA",
   "massagem-redutora": "price_1TEZX1EF7gDchvKD6Ue5CXWz",
   "body-shape-pen": "price_1TEZX2EF7gDchvKDTkM4dee6",
-  "hifu-facial": "price_1TEZXWEF7gDchvKDO4KSUB2q",
   "pure-facial": "price_1TEZX6EF7gDchvKDwpO20LCC",
   "fios-seda": "price_1TEZX7EF7gDchvKDRE2zyLLu",
   "booster-dermapen": "price_1TEZXXEF7gDchvKDi4uoAFN4",
@@ -38,6 +37,13 @@ export const treatmentPriceMap: Record<string, string> = {
  * Used for treatments that have multiple pricing options (zones, areas, etc.).
  */
 export const subTreatmentPriceMap: Record<string, Record<string, string>> = {
+  "hifu-facial": {
+    "Rosto Completo": "price_1TNtruEF7gDchvKDGuNlO2Tg",
+    "Rosto + Papada": "price_1TNtrvEF7gDchvKDWpXodO6N",
+    "Papada": "price_1TNtrwEF7gDchvKDnwYnROhl",
+    "Pescoço": "price_1TNtrxEF7gDchvKD6w7oqPeo",
+    "Rosto Completo + Papada + Pescoço": "price_1TNtryEF7gDchvKDI7JRpNsN",
+  },
   "depilacao-laser": {
     "Virilha Simples": "price_1TEd3cEF7gDchvKDJ8YPvjpP",
     "Axila": "price_1TEd3eEF7gDchvKDFj62A389",
