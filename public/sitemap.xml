@@ -5,44 +5,48 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://beautytech.com.pt/categoria/detox</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://beautytech.com.pt/categoria/modeladora</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://beautytech.com.pt/categoria/redutora</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://beautytech.com.pt/categoria/depilacao</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://beautytech.com.pt/categoria/skin-face</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://beautytech.com.pt/categoria/face-design</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://beautytech.com.pt/categoria/massagens</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://beautytech.com.pt/categoria/capilar</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
+  <!-- Categorias -->
+  <url><loc>https://beautytech.com.pt/categoria/detox</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://beautytech.com.pt/categoria/modeladora</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://beautytech.com.pt/categoria/redutora</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://beautytech.com.pt/categoria/depilacao</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://beautytech.com.pt/categoria/skin-face</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://beautytech.com.pt/categoria/face-design</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://beautytech.com.pt/categoria/massagens</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://beautytech.com.pt/categoria/capilar</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Tratamentos -->
+  <url><loc>https://beautytech.com.pt/tratamento/drenagem-linfatica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/pressoterapia</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/manta-termica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/detox-pes</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/just4you-corporal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/eletroestimulacao</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/pump-up</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/hifu-corporal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/massagem-redutora</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/body-shape-pen</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/depilacao-laser</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/hifu-facial</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/pure-facial</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/fios-seda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/booster-dermapen</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/intradermoterapia</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/preenchimento-labial</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/micropigmentacao-labial</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/sobrancelhas-hibridas</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/lash-brow-lamination</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/extensao-pestanas</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/design-sobrancelhas</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/liberacao-muscular</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/empina-bumbum</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/perda-medidas</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/fisio-localizada</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/fisio-modelado</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/intensivo-flacidez-gordura</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/facial-intensivo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/eliminacao-pelos</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/crescimento-capilar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://beautytech.com.pt/tratamento/preenchimento-rugas</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
