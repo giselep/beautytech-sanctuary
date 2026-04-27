@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Instagram, Facebook } from "lucide-react";
+import { Phone, MapPin, Instagram, Facebook, Star } from "lucide-react";
 import logo from "@/assets/logo.webp";
 import { categories } from "@/data/treatments";
 
 const WHATSAPP_LINK = "https://wa.me/351931670667";
+const GOOGLE_MAPS_LINK = "https://maps.google.com/?cid=10569936257126486960";
+const GOOGLE_REVIEW_LINK = "https://search.google.com/local/writereview?placeid=10569936257126486960";
 
 const Footer = () => {
   return (
@@ -69,9 +71,25 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-0.5" />
-                <span className="font-body text-sm text-primary-foreground/60">
+                <a
+                  href={GOOGLE_MAPS_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-body text-sm text-primary-foreground/60 hover:text-primary transition-colors"
+                >
                   Liberty Fitness Center, Braga
-                </span>
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Star className="w-4 h-4 text-primary" />
+                <a
+                  href={GOOGLE_REVIEW_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-body text-sm text-primary-foreground/60 hover:text-primary transition-colors"
+                >
+                  Deixar avaliação no Google
+                </a>
               </li>
             </ul>
             <div className="flex gap-3 mt-5">
